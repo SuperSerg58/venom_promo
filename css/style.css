@@ -4,9 +4,26 @@ body {
     background-color: #14131A;
 }
 
+.img {
+    max-width: 100%;
+}
+
 .container {
-    max-width: 1140px;
+    /*max-width: 1140px;*/
+    width: 90%;
     margin: auto;
+}
+
+.venom {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 728px;
+    width: 40%;
+}
+
+.film-logo {
+    width: 70%;
 }
 
 .header {
@@ -42,7 +59,7 @@ body {
     font-size: 24px;
     line-height: 28px;
     color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 38px;
+    margin-bottom: 2%;
 }
 
 .film-description {
@@ -50,7 +67,7 @@ body {
     line-height: 140%;
     color: rgba(255, 255, 255, 0.8);
     max-width: 423px;
-    margin-top: 40px;
+    margin-top: 3%;
 }
 
 .button {
@@ -82,21 +99,16 @@ body {
 }
 
 .button-group {
-    margin-top: 70px;
+    margin-top: 5%;
 }
 
-.venom {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
 
 .splashes {
-    background: url("../img/splashes.png") no-repeat top right, #14131A url("../img/background.jpg") no-repeat center / 100%;
+    background: url("../img/splashes.png") no-repeat top right / 70%, #14131A url("../img/background.jpg") no-repeat;
 }
 
-.primary-bg{
-    background: url("../img/background.jpg") no-repeat center / 100%;
+.primary-bg {
+    background: #14131A url("../img/background.jpg") no-repeat center / 100%;
 }
 
 .content {
@@ -197,8 +209,99 @@ body {
     margin-bottom: 20px;
 }
 
+.menu-button {
+    display: none;
+}
 
+@media (max-width: 768px) {
+    .splashes {
+        background: #14131A;
+    }
 
+    .primary-bg {
+        background: #14131A;
+    }
+
+    .venom {
+        top: 20%;
+    }
+}
+
+@media (max-width: 576px) {
+    .content .trailer {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav {
+        margin-left: auto;
+    }
+
+    .menu-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: none;
+        background-color: #14131A;
+        cursor: pointer;
+        color: white;
+
+    }
+
+    .menu-button-text {
+        margin-right: 10px;
+    }
+
+    .button-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .film-text {
+        text-align: center;
+    }
+
+    .poster-wrapper {
+        flex-direction: column;
+    }
+
+    .poster {
+        margin-right: 0;
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 10px;
+    }
+
+    .column-2 {
+        column-count: 1;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        margin-bottom: 4%;
+    }
+
+    .film {
+        margin-top: 20%;
+    }
+
+    .content {
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+
+    .col {
+        margin-bottom: 5%;
+    }
+}
 
 
 
